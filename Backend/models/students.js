@@ -3,14 +3,31 @@ const Schema = mongoose.Schema;
 
 const LogicpoolStudentsSchema = new Schema ({
 
-  Name: {
+  First_Name: {
     type: String ,
-    required: true
+    required: true,
   },
 
-  Email: {
+  Last_Name: {
     type: String ,
-    required: true
+    required: true,
+  },
+
+
+  Email_Id: {
+    type: String ,
+    required: true,
+    unique: true
+  },
+
+  Contact_Number:{
+    type: String ,
+    required: true,
+  },
+
+  Address: {
+    type: String ,
+    required: true,
   },
 
   Password: {
@@ -21,3 +38,5 @@ const LogicpoolStudentsSchema = new Schema ({
 
 const LogicpoolStudents = mongoose.model("LogicpoolStudents" , LogicpoolStudentsSchema )
 module.exports = LogicpoolStudents;
+
+

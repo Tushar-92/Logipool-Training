@@ -30,6 +30,9 @@ mongoose
   const studentRouter = require('./routes/student');
   app.use('/student' , studentRouter);
 
+  const trainerRouter = require('./routes/trainer');
+  app.use('/trainer' , trainerRouter);
+
 
   //Connecting to Server
   app.listen(3000, () => {
