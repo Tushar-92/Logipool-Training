@@ -36,3 +36,7 @@ const LogicpoolTrainersSchema = new Schema ({
         required: true
     }
 });
+
+
+const LogicpoolTrainers = mongoose.model("LogicpoolTrainers" , LogicpoolTrainersSchema )
+module.exports = LogicpoolTrainers;
