@@ -33,6 +33,7 @@ async function trainerRegistration(req, res) {
             res.status(201).json({message: 'Successfully Created New Trainer Record'});
         
         })
+        
 
               
     } catch (error) {
